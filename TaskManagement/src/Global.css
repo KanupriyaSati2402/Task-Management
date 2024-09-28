@@ -1,0 +1,333 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+  }
+
+
+  /* landing */
+  
+  .landing-container {
+    position: relative;
+    padding:10px;
+    height: 90vh;
+  }
+  
+  .content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    position: relative;
+  }
+  .text-section {
+    max-width: 600px;
+  }
+  
+  .heading {
+    font-size: 4rem;
+    color: #2c2c2c;
+  }
+  
+  .heading span {
+    color: #780193;
+  }
+  
+  .description {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #7b7b7b;
+  }
+  
+  .cta-button {
+    margin-top: 30px;
+    background-color: #780193;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-right:12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #9903b7;
+  }
+
+  .image-section {
+    max-width: 600px;
+  }
+  
+  .todo-image {
+    max-width: 690px;
+    height: 70vh;
+  }
+  
+  .content-section::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 600px;
+    height: 600px;
+    background-color: #f8e2fd;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  /* signup */
+
+  .signup{
+    display:flex;
+    overflow-y: none;
+    height: 96vh;
+  }
+form {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(145deg, #e1e0e0, #c9c9c9);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 10px auto;
+    font-family: Arial, sans-serif;
+    height: 95vh;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 15px;
+    color: #4a4a4a;
+  }
+  
+  /* Input styles */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+    font-size: 1rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #dd7afe;
+    box-shadow: 0px 5px 15px rgba(98, 0, 234, 0.1);
+  }
+
+  button.submit {
+    background: linear-gradient(145deg, #690083, #b100dd);
+    color: white;
+    padding: 6px;
+    border: none;
+    border-radius: 30px;
+    font-size: 22px;
+  }
+  
+  button.submit:hover {
+    background: linear-gradient(145deg, #ba09eb, #df6bff);
+    box-shadow: 0px 10px 20px rgba(138, 3, 169, 0.4);
+  }
+  .photo-signup{
+    width: 50%;
+    height: 100vh;
+}
+  label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  div {
+    margin-bottom: 20px;
+  }
+  form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  form div:last-child {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* login */
+  .loginpage{
+    width: 100%;
+  }
+  .loginpage form{
+    height: 65vh;
+    margin:90px auto;
+  }
+.loginpage h2{
+    font-size: 28px;
+}
+  .login-btn{
+    background: linear-gradient(145deg, #6f008a, #d944fe);
+    color: white;
+    padding: 6px;
+    border: none;
+    border-radius: 30px;
+    font-size: 22px;
+    
+  }
+
+  /* form ends */
+
+
+/* Admin */
+.Adminpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #E9ECF5; 
+  }
+  .Adminpage::-webkit-scrollbar{
+    display: none;
+    overflow-y: hidden;
+  }
+  /* Admin Heading */
+  .Adminpage h1 {
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .admin {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color:  #b702e4; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .admin:hover {
+    background-color: #8c04ae ; 
+  }
+  
+
+  .userDetails {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .userCard {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .userCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .userCard h2 {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+
+  .userCard button {
+    padding: 8px 15px;
+    margin: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    color:white;
+    background-color: #8c04ae;
+  }
+  
+  .userCard button:hover {
+    background-color: #d21eff;
+  }
+  
+  /* User */
+
+  /* Userpage Section Styling */
+.Userpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background: #f5f5f5; /* Light background color */
+    height: 100vh;
+  }
+  
+  /* Heading Styling */
+  .Userpage h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Button Container Styling */
+  .Userpage button {
+    background: linear-gradient(135deg, #6C63FF 0%, #5BB97C 100%); /* Gradient */
+    border: none;
+    border-radius: 25px;
+    padding: 15px 40px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Button shadow */
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase; /* Capital letters */
+  }
+  
+  .Userpage button:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Userpage button:focus {
+    outline: none; /* Remove default focus outline */
+  }
+  
+  /* Button Specific Colors */
+  .Userpage button:nth-child(2) {
+    background: linear-gradient(135deg, #6A11CB 0%, #2575FC 100%); /* View Task: Blue Gradient */
+  }
+  
+  .Userpage button:nth-child(3) {
+    background: linear-gradient(135deg, #F7971E 0%, #FFD200 100%); /* Create Task: Orange Gradient */
+  }
+  
+  .Userpage button:nth-child(4) {
+    background: linear-gradient(135deg, #FF512F 0%, #DD2476 100%); /* Edit Task: Red Gradient */
+  }
+  
+  .Userpage button:nth-child(5) {
+    background: linear-gradient(135deg, #34e89e 0%, #0f3443 100%); /* Assign Task to self: Green Gradient */
+  }
+  
